@@ -1,0 +1,4 @@
+function obtenerTareasResumen()
+{
+    return [{ "ProjectId": 30481, "TaskId": 682963, "TaskName": "02 - Sección de Rutas" }, { "ProjectId": 30481, "TaskId": 682964, "TaskName": "01 - Gestion" }, { "ProjectId": 30481, "TaskId": 682965, "TaskName": "03 - Sección Planificación" }, { "ProjectId": 30481, "TaskId": 682966, "TaskName": "04 - Sección Operaciones" }, { "ProjectId": 30481, "TaskId": 682967, "TaskName": "05 - Sección Informes" }, { "ProjectId": 33101, "TaskId": 731746, "TaskName": "Sprint 01" }, { "ProjectId": 33101, "TaskId": 752761, "TaskName": "Sprint 02" }, { "ProjectId": 33710, "TaskId": 729145, "TaskName": "Sprint 01" }, { "ProjectId": 33710, "TaskId": 748482, "TaskName": "Sprint 02" }, { "ProjectId": 33710, "TaskId": 759607, "TaskName": "Sprint 03" }];
+}

@@ -1,0 +1,174 @@
+body 
+{
+    background-color: aliceblue;
+}
+
+#board {
+    margin: 100px 0 0 0;
+    height: 1px; /* ! */
+    width: 200%;
+}
+
+.padding0_25 {
+    padding: 0 25px;
+}
+
+        .lists {
+            /*background-color: palegoldenrod;*/
+            /*border: 1px solid red;*/
+            /*				height: 500px;*/
+        }
+
+        .list {
+            float: left;
+            margin: 0 10px 30px 0;
+            box-shadow: 0px 0px 10px 1px rgba(150, 150, 150, 0.25);
+            background: white;
+            /* default */
+            border: 1px solid silver;
+            border-radius: 3px;
+            cursor: move;
+            z-index: 1;
+            /*overflow: auto !important;*/
+        }
+
+            .list h1 {
+                margin: 0;
+                /*border-bottom: 1px dotted silver;*/
+                background-color: lightgray;
+                padding: 2px;
+                font-size: 12pt;
+                text-align: right;
+                /*				position: absolute;
+                                right: 10px;
+                                top: 0px;*/
+                border-radius: 3px;
+            }
+
+        .foo {
+            display: inline-block;
+            margin: 0;
+            /*border: 1px solid silver;*/
+            /*background: white;  default */
+            padding: 5px;
+            width: 275px;
+            position: relative;
+            /*min-height: 15px;*/
+            z-index: 1;
+        }
+
+            .foo.droppable {
+                /*box-shadow: 1px 1px 13px;*/
+                box-shadow: 0px 0px 10px 5px rgba(150, 50, 50, 0.5);
+            }
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            /*margin: 12px 5px;*/
+            padding: 10px;
+            /*width: 100px;*/
+            min-height: 10px;
+            max-height: 150px;
+            overflow: auto;
+            color: black;
+            cursor: pointer;
+            text-align: left;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            box-shadow: 2px 2px 2px #eee;
+        }
+
+        .bg-default {
+            background-color: #ff8;
+        }
+
+        .cardContent {
+            display: none;
+        }
+
+        .add {
+            margin: 0 0 0 10px;
+        }
+
+        .template {
+            display: none;
+        }
+
+        .user {
+            float: right;
+        }
+
+        .priority {
+            float: left;
+        }
+
+        .cardTitle textarea {
+            background-color: transparent;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: 1px solid transparent !important;
+            overflow: hidden;
+            word-wrap: break-word;
+            height: 80px;
+        }
+
+        textarea,
+        textarea:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: transparent !important;
+        }
+
+        .sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+            float: left;
+            margin-right: 10px;
+            width: 100%;
+        }
+
+            .sortable li {
+                margin: 10px 5px;
+                width: 250px;
+            }
+
+        .center {
+            padding: 10px;
+            margin: 0 auto !important;
+        }
+
+        .ui-state-highlight {
+            float: left;
+            margin: 0 10px 30px 0;
+            /*box-shadow: 0px 0px 10px 1px rgba(150, 150, 150, 0.25);*/
+            background-color: transparent;
+            height: 1px;
+            width: 275px;
+            border: 1px solid transparent;
+            /*border-radiuss: 3px;*/
+        }
+
+        .navItem {
+            margin: 8px 0;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        /* revisado */
+        .logo
+        {
+            width:40px;
+            height:25px;
+        }
+
+        .slProyecto
+        {
+            max-width:300px;
+            min-width:100px;
+            width:auto;
+        }

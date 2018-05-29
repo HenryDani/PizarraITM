@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizarra IT Transporte</title>
+
+    <!-- Carga estilos -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Titulo -->
+            <div class="navbar-header">
+                <h3>Pizarra <small>IT Transporte</small></h3>
+            </div>
+            <!-- Selector Proyecto-->
+            <div class="navItem  padding0_25 pull-left">
+                <div class="form-group">
+                    <label for="slProyecto">Proyecto</label>
+                    <select class="form-control" id="slProyecto" title="hola">
+                        <option>Selecciona un proyecto</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Selector de Sprint -->
+            <div class="navItem  padding0_25 pull-left">
+                <div class="form-group">
+                    <label for="slSprint">Sprint</label>
+                    <select class="form-control" id="slSprint" title="hola">
+                        <option>Selecciona un sprint</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pie de pagina -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid pull-right">
+            <br />
+            See at <i class="fa fa-github-square"></i> github: <a href="https://github.com/jcarcas/PizarraITM">url</a>&nbsp;|&nbsp;
+            <a href="http://www.gruposese.com">
+                <img class="logo" src="img/logo.png">
+                www.gruposese.com
+            </a>i
+        </div>
+    </nav>
+
+    <!-- Pizarra-->
+    <div id="board" class="container-fluid">
+
+        <div id="Backlog" class="list">
+            <div class="foo">
+                <h1>Backlog</h1>
+                <ul id="lsBacklog" class="sortable droptrue">
+                </ul>
+            </div>
+        </div>
+
+        <div id="Todo" class="list">
+            <div class="foo">
+                <h1>Pendiente</h1>
+                <ul id="lsPendiente" class="sortable droptrue"></ul>
+            </div>
+        </div>
+
+        <div id="Done" class="list">
+            <div class="foo">
+                <h1>En proceso</h1>
+                <ul id="lsProceso" class="sortable droptrue"></ul>
+            </div>
+        </div>
+
+        <div id="Done" class="list">
+            <div class="foo">
+                <h1>Hecho</h1>
+                <ul id="lsHecho" class="sortable droptrue"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                   <div id="description">...</div>
+                    <br />
+                   <div id="team"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carga librerias js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js" type="text/javascript"></script>
+
+    <!-- Carga js locales -->
+    <script src="proyectos.js"></script>
+    <script src="tareas.js"></script>
+    <script src="tareas_resumen.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
