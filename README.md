@@ -6,4 +6,4 @@ Pero de momento permite visualizar en local la pizarra y actualizarlo periodicam
 
 Mi agradecimiento al código de https://github.com/gueff/HKB que me ha servido de base para hacer la pizarra html.
 
-https://github.com/jcarcas/PizarraITM/blob/master/img/logo.png
+<img src="https://github.com/jcarcas/PizarraITM/blob/master/img/Captura2.PNG" />
