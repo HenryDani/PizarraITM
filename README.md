@@ -5,3 +5,5 @@ La idea es ir mejorando este código para permitir cambiar el estado de las tare
 Pero de momento permite visualizar en local la pizarra y actualizarlo periodicamente con una tarea.
 
 Mi agradecimiento al código de https://github.com/gueff/HKB que me ha servido de base para hacer la pizarra html.
+
+https://github.com/jcarcas/PizarraITM/blob/master/img/logo.png
